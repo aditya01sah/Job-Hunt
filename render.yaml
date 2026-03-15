@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: jobhunt-backend
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.20.4
+      - key: PORT
+        value: 8000
+      # YOU MUST ADD THESE IN THE RENDER DASHBOARD:
+      # - key: MONGO_URI
+      # - key: JWT_SECRET
+      # - key: CLOUDINARY_CLIENT_NAME
+      # - key: CLOUDINARY_CLIENT_API
+      # - key: CLOUDINARY_CLIENT_SECRET
+      # - key: FRONTEND_URL   (Set this to your GitHub pages URL once deployed e.g https://aditya01sah.github.io/Job-Hunt/)
